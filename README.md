@@ -21,6 +21,22 @@ This repository provides an **Ansible playbook** and **GitHub Actions workflow**
 - **GitHub CLI (`gh`)** for manual workflow triggers.
 - **Self-hosted runner** registered on your Mac (if using GitHub Actions).
 
+# Install Homebrew (if not installed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install Python3
+brew install python
+
+# Install Multipass
+brew install multipass
+
+# Install Ansible
+brew install ansible
+
+# Install GitHub CLI
+brew install gh
+
+
 ---
 
 ## Setting Up a GitHub Actions Self-Hosted Runner on macOS
