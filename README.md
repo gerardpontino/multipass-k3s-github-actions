@@ -65,25 +65,33 @@ Leave this terminal open or run it as a background service to keep the runner ac
 
 ## Usage
 
-### 1. Pull the repository
+After You Fork This Repository
 
-Clone the repository locally (optional for triggering workflow, required for local testing) and push to your own repository
+After you fork this repository to your own GitHub account, you can optionally clone it locally for customization or testing.
+
+### 1. Pull the Repository
+
+Clone the repository locally (optional for triggering workflows, required for local testing) and push it to your own repository:
 
 ```bash
 git clone https://github.com/gerardpontino/multipass-k3s-github-actions.git
 cd multipass-k3s-github-actions
 ```
+
+Remove the original remote and add your own:
 ```bash
 git remote remove origin
 ```
 ```bash
 git remote add origin https://github.com/<your-username>/<new-repo>.git
 ```
+
+Then push to your repository:
 ```bash
 git push -u origin main
 ```
-
-> **Note:** After cloning your own repository, you can move or copy these files into it to customize, run, or manage workflows there. This step assumes you have already **pushed the workflow, playbook, and inventory files to your repository**.
+Note: After cloning your own repository, you can move or copy these files into it to customize, run, or manage workflows there.
+This step assumes you have already pushed the workflow, playbook, and inventory files to your repository.
 
 ### 2. (Optional) Trigger workflow from GitHub web
 
